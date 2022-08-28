@@ -1,11 +1,11 @@
-board: MKS DLC32 2.0
-name: MKS DLC32 XYZ
-meta: (12/2/2021) B. Dring for diruuu
+board: LGT RAY V1.2
+name: Longer Ray5 XYZ
+meta: (8/26/2022) MichaelDot
 stepping:
-  engine: I2S_STREAM
-  idle_ms: 250
-  pulse_us: 4
-  dir_delay_us: 1
+  engine: I2S_STATIC
+  idle_ms: 25
+  pulse_us: 10
+  dir_delay_us: 0
   disable_delay_us: 0
 
 axes:
@@ -17,11 +17,11 @@ axes:
     max_travel_mm: 400.000
     soft_limits: false
     homing:
-      cycle: 2
+      cycle: 1
       positive_direction: false
       mpos_mm: 0.000
       feed_mm_per_min: 100.000
-      seek_mm_per_min: 200.000
+      seek_mm_per_min: 1200.000
       settle_ms: 500
       seek_scaler: 1.100
       feed_scaler: 1.100
@@ -31,7 +31,7 @@ axes:
       limit_pos_pin: NO_PIN
       limit_all_pin: NO_PIN
       hard_limits: false
-      pulloff_mm: 1.000
+      pulloff_mm: 5.000
       stepstick:
         step_pin:  i2so.1
         direction_pin: I2SO.2:low
@@ -43,11 +43,11 @@ axes:
     max_travel_mm: 400.000
     soft_limits: false
     homing:
-      cycle: 3
-      positive_direction: true
+      cycle: 2
+      positive_direction: false
       mpos_mm: 0.000
       feed_mm_per_min: 100.000
-      seek_mm_per_min: 200.000
+      seek_mm_per_min: 1200.000
       settle_ms: 500
       seek_scaler: 1.100
       feed_scaler: 1.100
@@ -57,7 +57,7 @@ axes:
       limit_pos_pin: NO_PIN
       limit_all_pin: NO_PIN
       hard_limits: false
-      pulloff_mm: 1.000
+      pulloff_mm: 5.000
       stepstick:
         step_pin: I2SO.5
         direction_pin: I2SO.6
@@ -69,7 +69,7 @@ axes:
     max_travel_mm: 200.000
     soft_limits: false
     homing:
-      cycle: 1
+      cycle: 0
       positive_direction: true
       mpos_mm: 0.000
       feed_mm_per_min: 100.000
